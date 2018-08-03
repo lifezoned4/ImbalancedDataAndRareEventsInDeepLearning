@@ -53,7 +53,7 @@ bash ../run_experiment1.sh
 ```
 6. Yield results.
 
-# Experiment 2 (DQN experiment):
+## Experiment 2 (DQN experiment):
 1. Copy code on a read-write medium (skip if you git clone)
 2. Install dependencies
     1. Create a virtual python environment and activate it.
