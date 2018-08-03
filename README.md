@@ -2,6 +2,13 @@
 Experimental part of master thesis at the university of Duisburg-Essen at the department of "Modellierung Adaptiver Systeme". Read the thesis for further understanding of the experiments.
 
 # Experimental running guide:
+Be aware about the fact that these experiments were only tested on Linux (using Ubuntu 16.04 LTS).
+Experiment 1 can probably run on MS Windows 10, but experiment 2 depends on atari_py using ALE which
+was in context of OpenAI's gym not runnable on Windows 10.
+
+A GPU is needed to run them effectively. We tested this experiments on a Nvidia Geforce 1070 Ti with
+8 GB of VRAM.
+
 Both experiments depend on Rscript, python 3.6 and needed following R libraries.
 
 Do this in your user/global R environment:
