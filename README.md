@@ -21,12 +21,12 @@ install.packages("Hmisc")
     ```
     2. Install numpy.
     ```bash
-    pip3 install -U numpy
+    pip3 install -U numpy==1.14.5
     ```
     3. Install tensorflow in GPU mode and check if it runs correctly.
     (Beware of addition steps need in GPU mode. You need proprietary libraries from e.g. Nvidia )
     ```bash
-    pip3 install -U tensorflow-gpu
+    pip3 install -U tensorflow-gpu==1.8
     python -c "import tensorflow as tf; print(tf.__version__)"
     ```
     4. Install pandas.
@@ -65,12 +65,12 @@ bash ../run_experiment1.sh
     ```
     2. Install numpy.
     ```bash
-    pip3 install -U numpy
+    pip3 install -U numpy==1.14.5
     ```
     3. Install tensorflow in GPU mode and check if it runs correctly.
     (Beware of addition steps need in GPU mode. You need proprietary libraries from e.g. Nvidia )
     ```bash
-    pip3 install -U tensorflow-gpu
+    pip3 install -U tensorflow-gpu==1.8
     python -c "import tensorflow as tf; print(tf.__version__)"
     ```
     4. Install atari_py. It is needed by gym.
