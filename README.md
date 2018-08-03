@@ -16,7 +16,7 @@ install.packages("Hmisc")
 2. Install dependencies
     1. Create a virtual python environment and active it.
     ```bash
-    virtualenv -p $PATH_TO_PYTHON ./src.experiment1/
+    virtualenv -p python3 ./src.experiment1/
     source src.experiment1/bin/activate
     ```
     2. Install numpy.
@@ -58,7 +58,7 @@ bash ../run_experiment1.sh
 2. Install dependencies
     1. Create a virtual python environment and activate it.
     ```bash
-    virtualenv -p $PATH_TO_PYTHON ./src.experiment1/
+    virtualenv -p python3 ./src.experiment1/
     source src.experiment1/bin/activate
     ```
     2. Install numpy.
