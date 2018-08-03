@@ -25,7 +25,7 @@ install.packages("Hmisc")
     ```
     3. Install tensorflow in gpu mode in version 1.8.
     ```bash
-    pip3 install -U tensorflow-gpu==1.8
+    pip3 install -U tensorflow-gpu
     ```
     4. Install pandas.
     ```bash
