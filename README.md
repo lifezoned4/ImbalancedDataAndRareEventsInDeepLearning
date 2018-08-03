@@ -23,9 +23,11 @@ install.packages("Hmisc")
     ```bash
     pip3 install -U numpy
     ```
-    3. Install tensorflow in gpu mode in version 1.8.
+    3. Install tensorflow in GPU mode and check if it runs correctly.
+    (Beware of addition steps need in GPU mode. You need proprietary libraries from e.g. Nvidia )
     ```bash
     pip3 install -U tensorflow-gpu
+    python -c "import tensorflow as tf; print(tf.__version__)"
     ```
     4. Install pandas.
     ```bash
@@ -65,7 +67,7 @@ bash ../run_experiment1.sh
     ```bash
     pip3 install -U numpy
     ```
-    3. Install tensorflow in GPU mode in version 1.8 and check if it runs correctly.
+    3. Install tensorflow in GPU mode and check if it runs correctly.
     (Beware of addition steps need in GPU mode. You need proprietary libraries from e.g. Nvidia )
     ```bash
     pip3 install -U tensorflow-gpu
@@ -81,7 +83,7 @@ bash ../run_experiment1.sh
     ```
     6. Install OpenAI baselines. Note that baselines is monkey punched and is already in the repository.
     ```bash
-    cd ./src.experiment1/baselines/
+    cd ./src.experiment2/baselines/
     pip3 install -U -e .
     ```
 3. Create a new directory which will contain the results.
