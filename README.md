@@ -21,23 +21,23 @@ install.packages("Hmisc")
     ```
     2. Install numpy.
     ```bash
-    pip3 install numpy
+    pip3 install -U numpy
     ```
     3. Install tensorflow in gpu mode in version 1.8.
     ```bash
-    pip3 install tensorflow-gpu==1.8
+    pip3 install -U tensorflow-gpu==1.8
     ```
     4. Install pandas.
     ```bash
-    pip3 install pandas
+    pip3 install -U pandas
     ```
     5. Install scikit-learn.
     ```bash
-    pip3 install sklearn
+    pip3 install -U sklearn
     ```
     6. Install imbalanced-learn.
     ```bash
-    pip3 install imblearn
+    pip3 install -U imblearn
     ```
 3. Create a new directory which will contain the results.
 ```bash
@@ -63,24 +63,26 @@ bash ../run_experiment1.sh
     ```
     2. Install numpy.
     ```bash
-    pip3 install numpy
+    pip3 install -U numpy
     ```
-    3. Install tensorflow in GPU mode in version 1.8.
+    3. Install tensorflow in GPU mode in version 1.8 and check if it runs correctly.
+    (Beware of addition steps need in GPU mode. You need proprietary libraries from e.g. Nvidia )
     ```bash
-    pip3 install tensorflow-gpu==1.8
+    pip3 install -U tensorflow-gpu
+    python -c "import tensorflow as tf; print(tf.__version__)"
     ```
     4. Install atari_py. It is needed by gym.
     ```bash
-    pip3 install atari_py
+    pip3 install -U atari_py
     ```
     4. Install OpenAI gym.
     ```bash
-    pip3 install gym==0.10.5
+    pip3 install -U gym==0.10.5
     ```
     6. Install OpenAI baselines. Note that baselines is monkey punched and is already in the repository.
     ```bash
     cd ./src.experiment1/baselines/
-    pip3 install -e .
+    pip3 install -U -e .
     ```
 3. Create a new directory which will contain the results.
 ```bash
@@ -113,7 +115,7 @@ When no GPU is available you can install tensorflow in CPU mode
 Replace step 1.3 in the experiments by
 
 ```bash
-pip3 install tensorflow==1.8
+pip3 install -U tensorflow==1.8
 ```
 
 Be warned that running the experiment on CPU takes ages.
