@@ -14,17 +14,47 @@ install.packages("Hmisc")
 ## Experiment 1 (supervised experiment):
 1. Copy code on a readwrite medium
 2. Install dependencies
-  1. Create a virtual python environment
-    1. virtualenv -p $PATH_TO_PYTHON ./src.experiment1/
-    2. source src.experiment1/bin/activate
-  2. pip3 install numpy
-  3. pip3 install tensorflow-gpu==1.8
-  4. pip3 install pandas
-  5. pip3 install sklearn
-  6. pip3 install imblearn
-3. mkdir ./src.experiment1/<timestamp>.data
-4. cd ./src.experiment1/<timestamp>.data
-5. bash ../run_experiment1.sh
+    1. Create a virtual python environment
+        1.
+        ```bash
+        virtualenv -p $PATH_TO_PYTHON ./src.experiment1/
+        ```
+        2.
+        ```bash
+        source src.experiment1/bin/activate
+        ```
+    2.
+    ```bash
+    pip3 install numpy
+    ```
+    3.
+    ```bash
+    pip3 install tensorflow-gpu==1.8
+    ```
+    4.
+    ```bash
+    pip3 install pandas
+    ```
+    5.
+    ```bash
+    pip3 install sklearn
+    ```
+    6.
+    ```bash
+    pip3 install imblearn
+    ```
+3.
+```bash
+mkdir ./src.experiment1/<timestamp>.data
+```
+4.
+```bash
+cd ./src.experiment1/<timestamp>.data
+```
+5.
+```bash
+bash ../run_experiment1.sh
+```
 6. Yield results.
 
 # Experiment 2 (DQN experiment):
