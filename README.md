@@ -112,6 +112,19 @@ bash run_all_experiment.sh
 3. enjoy the results in the folders mentioned in top part.
 
 # Possible issues:
+## python packages version missmatch
+Be aware when some packages forcing numpy, tensorflow-gpu or gym to be on wrong version.
+Check on each step if any new versions of this packages were forced to be installed.
+
+## No tensorflow-gpu
+Check if no tensorflow duplicate packages are in environment.
+
+```bash
+pip3 list | grep tensorflow
+```
+
+Should return that only tensorflow-gpu is installed and no tensorflow (without gpu) is installed.
+
 ## Tensorflow in  CPU mode:
 When no GPU is available you can install tensorflow in CPU mode
 Replace step 1.3 in the experiments by
@@ -122,6 +135,18 @@ pip3 install -U tensorflow==1.8
 
 Be warned that running the experiment on CPU takes ages.
 
+## Experiments run "damn too slow"
+Check if you using GPU (on NVIDIA for example with)
+```bash
+nvidia-smi
+```
+
+
 ## GPU VRAM is too small:
 Experiments will fail when they not fit in VRAM. We tested only with 8 GB of VRAM.
 When fewer VRAM is available the running scripts should be adjusted by hand to do smaller parallel runs of in each experiment. (just put some 'wait' between the calls)
+
+You can check available VRAM for example on a nvidia GPU with:
+```bash
+nvidia-smi
+```
