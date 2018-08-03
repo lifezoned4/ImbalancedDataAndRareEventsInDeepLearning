@@ -75,11 +75,11 @@ bash ../run_experiment1.sh
     ```
     4. Install OpenAI gym.
     ```bash
-    pip3 install 'gym.[atari]'==0.10.5
+    pip3 install gym==0.10.5
     ```
     6. Install OpenAI baselines. Note that baselines is monkey punched and is already in the repository.
     ```bash
-    cd ./baselines/
+    cd ./src.experiment1/baselines/
     pip3 install -e .
     ```
 3. Create a new directory which will contain the results.
