@@ -80,15 +80,19 @@ bash ../run_experiment1.sh
     pip3 install -U tensorflow-gpu==1.8
     python -c "import tensorflow as tf; print(tf.__version__)"
     ```
-    4. Install atari_py. It is needed by gym.
+    4. Install opencv. It is needed by baselines.
+    ```bash
+    pip3 install -U opencv-python
+    ```
+    5. Install atari_py. It is needed by gym.
     ```bash
     pip3 install -U atari_py
     ```
-    4. Install OpenAI gym.
+    6. Install OpenAI gym.
     ```bash
     pip3 install -U gym==0.10.5
     ```
-    6. Install OpenAI baselines. Note that baselines is monkey punched and is already in the repository.
+    7. Install OpenAI baselines. Note that baselines is monkey punched and is already in the repository.
     ```bash
     cd ./src.experiment2/baselines/
     pip3 install -U -e .
