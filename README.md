@@ -56,7 +56,7 @@ mkdir ./src.experiment1/<timestamp>.data
 ```bash
 cd ./src.experiment1/<timestamp>.data
 ```
-5. Run the core experiment (will take approximately more than 24h).
+5. Run the core experiment (will take approximately more than 48h).
 ```bash
 bash ../run_experiment1.sh
 ```
@@ -105,7 +105,7 @@ mkdir ./baselines/deepq/experiments/<timestamp>.data
 ```bash
 cd ./baselines/deepq/experiments/<timestamp>.data
 ```
-5. Run the core experiment (will take approximately more than 24h).
+5. Run the core experiment (will take approximately more than 48h).
 ```bash
 bash ../run_pong_experiment.sh
 ```
@@ -116,7 +116,7 @@ bash ../run_pong_experiment.sh
 Option to run both experiments after each other (first experiment1, second experiment2):
 
 1. Do both step 1 and step 2 from instructions from each experiment.
-2. Run script (takes more than 48h)
+2. Run script (takes more than four days of computation)
 ```bash
 bash run_all_experiment.sh
 ```
